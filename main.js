@@ -12,13 +12,32 @@ function classifyBMI(bmi) {
   return "Obese";
 }
 
-// Example inputs for testing
-const weight = 70;      // Weight in kilograms
-const height = 1.75;    // Height in meters
+// Import readline to allow user input via terminal
+const readline = require("readline").createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
-// Perform calculation and classification
-const bmi = calculateBMI(weight, height);
-const category = classifyBMI(bmi);
+// Ask the user for weight in kilograms
+readline.question("Enter your weight in kg: ", (weightInput) => {
+  // Ask the user for height in meters
+  readline.question("Enter your height in meters: ", (heightInput) => {
+    const weight = parseFloat(weightInput);
+    const height = parseFloat(heightInput);
 
-// Output result to the user
-console.log(`Your BMI is ${bmi} (${category})`);
+    // Validate the inputs
+    if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+      console.log("Invalid input. Please enter positive numeric values.");
+      readline.close();
+      return;
+    }
+    
+    // Perform calculation and classification
+    const bmi = calculateBMI(weight, height);
+    const category = classifyBMI(bmi);
+
+    // Show the result / Mostra o resultado
+    console.log(`\nYour BMI is ${bmi} (${category})`);
+    readline.close();
+  });
+});

@@ -12,13 +12,17 @@ It was built as part of a professional portfolio to demonstrate clear logic, cle
 
 ## Features
 
-- Input: Weight (kg) and Height (m)
-- Output: BMI value with 2 decimal places
-- Classification: Underweight, Normal, Overweight, or Obese
-- Clean code with bilingual comments (English + Portuguese)
-- Built to run directly in the terminal
+- Input: Weight (kg) and Height (m).
+- Output: BMI value with 2 decimal places.
+- Classification: Underweight, Normal, Overweight, or Obese.
+- Clean code with comments.
+- Built to run directly in the terminal.
 
 ## How to Run
+
+1. Make sure you have Node.js installed.
+2. Open your terminal inside the project folder.
+3. Run the command below and follow the prompts.
 
 ```bash
 node main.js
@@ -26,7 +30,9 @@ node main.js
 
 ## Example Output
 
-Your BMI is 22.86 (Normal weight)
+Enter your weight in kg: 75
+Enter your height in meters: 1.80
+-> Your BMI is 23.15 (Normal weight)
 
 ## Code Style
 
