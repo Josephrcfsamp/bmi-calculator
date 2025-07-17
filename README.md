@@ -1,4 +1,4 @@
-# bmi-calculator
+# BMI Simulator
 
 ## Description
 
@@ -47,4 +47,4 @@ Developed by Rafael Campos as part of a public portfolio project to demonstrate 
 
 ## License
 
-This project is licensed under the MIT License – see the LICENSE file for details.
+MIT License
