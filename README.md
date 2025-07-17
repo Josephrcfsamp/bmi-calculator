@@ -1,4 +1,4 @@
-# BMI Simulator
+# BMI Calculator
 
 ## Description
 
