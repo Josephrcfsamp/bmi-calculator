@@ -47,7 +47,5 @@ Developed by Rafael Campos as part of a public portfolio project to demonstrate 
 
 ## License
 
-## 🧾 License
-
 This project is licensed under the MIT License.  
 See the [LICENSE](./LICENSE) file for more information.
